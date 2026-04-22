@@ -1,6 +1,6 @@
 
 <body>
-<input type="text" [value]="countnum" readonly class="read"><br><br>
+<input type="text" [(ngModel)]="countnum" readonly class="read"><br><br>
 
 
 <div class="set">
@@ -13,5 +13,8 @@
 <button (click)="add()">+</button>
 
 </div>
+
+
+<input type="text" [(ngModel)]="yournum" class="your" (input)="countnum=yournum">
 
 </body>
