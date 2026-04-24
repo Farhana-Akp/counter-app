@@ -20,9 +20,14 @@ min():void
   {
     return;
   }
+  if(this.countnum>=1000)
+  {
+    return;
+  }
       this.countnum--;
-
- this.yournum=0;
+      this.yournum--;
+     
+;
    }
   
 
@@ -33,7 +38,7 @@ reset():void
 {
   
   this.countnum=0;
-   this.yournum=0;
+  this.yournum=0;
 
   
 }
@@ -41,21 +46,24 @@ reset():void
 
 add():void
 {
+if(this.countnum>=1000)
+  {
+    return;
+  }
+  
+  
   this.countnum++;
-     this.yournum=0;
+  this.yournum++;;
 
   
 }
-
-
-contructor():void{
-
-
-
-      
-    this.countnum=this.yournum;
-    this.yournum;
-
+check()
+{
+   if(this.yournum>1000){
+    this.yournum=1000;
+   }
 }
+
+
 
 }

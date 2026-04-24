@@ -34,7 +34,8 @@ body{
     height: 50px;
     border-radius: 220px;
     margin-right: 80px;
-       font-size: 20px;
+       font-size: 30px;
+       
 }
 .your
 {
@@ -57,3 +58,36 @@ body{
 
 }
 
+.red
+{
+    font-size: 30px;
+           cursor:pointer;
+
+
+}
+.red:hover
+{
+        color: #fa0606;
+
+}
+
+
+
+.green
+{
+    font-size: 30px;
+           cursor:pointer;
+
+
+}
+.green:hover
+{
+        color: #06fa3f;
+
+}
+.gray:hover
+{
+    cursor: pointer;
+    background-color: gray;
+    font-weight: bold;
+}

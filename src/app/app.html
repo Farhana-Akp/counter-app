@@ -4,17 +4,17 @@
 
 
 <div class="set">
-<button (click)="min()">-</button>
+<button (click)="min()" class="red" >-</button>
 
 
-<button (click)="reset()">RESET</button>
+<button (click)="reset()" class="gray">RESET</button>
 
 
-<button (click)="add()">+</button>
+<button (click)="add()" class="green">+</button>
 
 </div>
 
 
-<input type="text" [(ngModel)]="yournum" class="your" (input)="countnum=yournum">
+<input type="number" max="1000" [(ngModel)]="yournum" class="your"   (input)="countnum=yournum"   (ngModelChange)="check()">
 
 </body>
